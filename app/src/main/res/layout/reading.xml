@@ -5,28 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ReadingActivity">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/user"
-        android:layout_height="wrap_content"
+        android:id="@+id/category"
         android:layout_width="match_parent"
-        android:hint="user"
+        android:layout_height="wrap_content"
+        android:hint="Category"
         />
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/pwd"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:inputType="textPassword"
 
-        android:hint="password"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Content"
         />
+
     <androidx.appcompat.widget.AppCompatButton
+        android:text="Post"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
-
-        android:onClick="doLogin"
-        />
-
+        android:onClick="doPost"/>
 </LinearLayout>

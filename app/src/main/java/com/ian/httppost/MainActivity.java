@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     json.put("password",pwd);
 
                     conn.connect();
-//                    Log.v("Jacky","json:"+json.toString());
+                    Log.v("Jacky","json:"+json.toString());
 
                     OutputStream out = conn.getOutputStream();//輸出流，用來發送請求，http請求實際上直到這個函式裡面才正式傳送出去
                     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(out));//建立字元流物件並用高效緩衝流包裝它，便獲得最高的效率,傳送的是字串推薦用字元流，其它資料就用位元組流
